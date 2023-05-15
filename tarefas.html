@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap - Lista de Tarefas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      /* Estilos adicionais para customizar a lista de tarefas */
+      #todo-list {
+        margin-top: 20px;
+      }
+      .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- ... -->
+      
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-5 text-center">Lista de Tarefas</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="text" id="task-input" class="form-control" placeholder="Digite a sua tarefa">
+              <div class="input-group-append">
+                <button id="add-button" class="btn btn-primary" type="button">Salvar</button>
+              </div>
+            </div>
+          </form>
+          <div class="list-group" id="todo-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dependências Bootstrap e cód. JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
