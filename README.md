@@ -1,2 +1,2 @@
 # IESGO-tasks
- IESGO students' tasks
+ IESGO students tasks
