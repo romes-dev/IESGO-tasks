@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .priority-urgent {
+      color: red;
+    }
+    .priority-confidential {
+      color: purple;
+    }
+    .priority-important {
+      color: orange;
+    }
+    .priority-normal {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form id="task-form">
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="task-input">Nova Tarefa</label>
+          <input type="text" class="form-control" id="task-input" placeholder="Digite uma nova tarefa" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="priority-select">Prioridade</label>
+          <select class="form-control" id="priority-select" required>
+            <option value="urgent">Urgente</option>
+            <option value="confidential">Confidencial</option>
+            <option value="important">Importante</option>
+            <option value="normal">Normal</option>
+          </select>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="datetime-input">Data e Hora</label>
+          <input type="datetime-local" class="form-control" id="datetime-input" required>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Adicionar</button>
+    </form>
+    <ul id="task-list" class="list-group">
+      <!-- As tarefas serão adicionadas dinamicamente aqui -->
+    </ul>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="todolist.js"></script>
+</body>
+</html>

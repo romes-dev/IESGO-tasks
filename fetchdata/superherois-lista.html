@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super-Heróis</title>
+  <!-- Incluir o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Super-Heróis</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" id="search-input" class="form-control" placeholder="Digite o nome do super-herói">
+      </div>
+      <div class="col-md-2">
+        <button id="search-button" class="btn btn-primary">Buscar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <table id="heroes-table" class="table">
+      <thead>
+        <tr>
+          <th>Nome do Herói</th>
+          <th>Nome Real</th>
+          <th>Local de Nascimento</th>
+          <th>Super Poder</th>
+          <th>Maior Rival</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Os dados dos super-heróis serão adicionados aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Incluir o Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('search-input');
+      const searchButton = document.getElementById('search-button');
+      const heroesTable = document.getElementById('heroes-table').querySelector('tbody');
+      let superheroes;
+
+      // Função para exibir os dados dos super-heróis na tabela
+      function renderHeroes(heroes) {
+        heroesTable.innerHTML = '';
+
+        heroes.forEach(hero => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${hero.heroName}</td>
+            <td>${hero.realName}</td>
+            <td>${hero.birthplace}</td>
+            <td>${hero.superPower}</td>
+            <td>${hero.rival}</td>
+          `;
+
+          heroesTable.appendChild(row);
+        });
+      }
+
+      // Evento de clique no botão de busca
+      searchButton.addEventListener('click', function() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        const filteredHeroes = superheroes.filter(hero => hero.heroName.toLowerCase().includes(searchTerm));
+
+        renderHeroes(filteredHeroes);
+      });
+
+      // Carregar o arquivo JSON usando AJAX
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'superheroes.json', true);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          superheroes = JSON.parse(xhr.responseText);
+          renderHeroes(superheroes);
+        }
+      };
+      xhr.send();
+    });
+  </script>
+</body>
+</html>

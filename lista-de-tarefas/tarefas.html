@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        #todoList {
+            margin-top: 20px;
+        }
+
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <!-- ... -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Lista de Tarefas</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="mb-3">
+                <div class="input-group">
+                    <input type="text" id="task-input" name="task-input" class="form-control" placeholder="Digite a sua tarefa">
+                    <div class="input-group-append"><button type="submit" id="addButton" name="inserir" class="btn btn-primary fas fa-plus"> Inserir</button></div>
+                </div>
+                </form>
+                <div class="list-group" id="todoList">
+                </div>
+            </div>
+
+    </div>
+    <!-- Bootstrap depend -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Script -->
+    <source src="script.js">
+</body>
+</html>

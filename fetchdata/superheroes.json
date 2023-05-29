@@ -1,0 +1,80 @@
+[
+    {
+      "heroName": "Superman",
+      "realName": "Clark Kent",
+      "birthplace": "Smallville",
+      "superPower": "Força, velocidade e sentidos super-humanos; Voo; Visão de calor; Sopro congelante",
+      "rival": "Lex Luthor"
+    },
+    {
+      "heroName": "Batman",
+      "realName": "Bruce Wayne",
+      "birthplace": "Gotham City",
+      "superPower": "Intelecto de gênio; Condição física aprimorada; Gadgets e tecnologia",
+      "rival": "Coringa"
+    },
+    {
+      "heroName": "Mulher-Maravilha",
+      "realName": "Diana Prince",
+      "birthplace": "Themyscira",
+      "superPower": "Força, agilidade e durabilidade sobre-humanas; Voo; Laço da Verdade",
+      "rival": "Mulher-Leopardo"
+    },
+    {
+      "heroName": "Homem-Aranha",
+      "realName": "Peter Parker",
+      "birthplace": "Nova York",
+      "superPower": "Escalada de paredes; Força e agilidade aprimoradas; Sentido de aranha; Lançadores de teia",
+      "rival": "Duende Verde"
+    },
+    {
+      "heroName": "Thor",
+      "realName": "Thor Odinson",
+      "birthplace": "Asgard",
+      "superPower": "Manipulação de trovões e relâmpagos; Voo; Força sobre-humana; Longevidade",
+      "rival": "Loki"
+    },
+    {
+      "heroName": "Flash",
+      "realName": "Barry Allen",
+      "birthplace": "Central City",
+      "superPower": "Super velocidade; Viagem no tempo; Cura acelerada",
+      "rival": "Flash Reverso"
+    },
+    {
+      "heroName": "Mulher-Gato",
+      "realName": "Selina Kyle",
+      "birthplace": "Gotham City",
+      "superPower": "Agilidade e reflexos aprimorados; Habilidades acrobáticas; Maestria em artes marciais",
+      "rival": "Pinguim"
+    },
+    {
+      "heroName": "Hulk",
+      "realName": "Bruce Banner",
+      "birthplace": "Dayton, Ohio",
+      "superPower": "Força e resistência sobre-humanas; Regeneração celular acelerada",
+      "rival": "Abominável"
+    },
+    {
+      "heroName": "Capitão América",
+      "realName": "Steve Rogers",
+      "birthplace": "Nova York",
+      "superPower": "Força, velocidade e agilidade aprimoradas; Escudo indestrutível",
+      "rival": "Caveira Vermelha"
+    },
+    {
+      "heroName": "Lanterna Verde",
+      "realName": "Hal Jordan",
+      "birthplace": "Coast City",
+      "superPower": "Anel do Poder: Geração de energia eletromagnética; Criação de objetos sólidos",
+      "rival": "Sinestro"
+    },
+    {
+      "heroName": "Viúva Negra",
+      "realName": "Natasha Romanoff",
+      "birthplace": "Stalingrado, Rússia",
+      "superPower": "Perícia em combate corpo a corpo; Mestre em espionagem e disfarces",
+      "rival": "Taskmaster"
+    }
+  ]
+  
