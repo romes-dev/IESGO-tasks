@@ -1,0 +1,7 @@
+Tarefa:
+
+Crie um arquivo JSON chamado "alunos.json" com dados fictícios de alunos, contendo os seguintes campos para cada aluno: "nome", "idade" e "nota".
+Crie um aplicativo que carregue os dados dos alunos do arquivo JSON usando AJAX.
+Exiba os dados dos alunos em uma tabela HTML.
+Adicione a funcionalidade de ordenação da tabela por nome, idade e nota em ordem crescente e decrescente.
+Implemente uma função que calcule a média das notas dos alunos e exiba o resultado.
